@@ -1,0 +1,34 @@
+   sudo apt purge git 					#Use to remove the git installed package.
+   git
+   sudo apt install git
+   git
+   git --versio
+   git --version
+   git config --global user.name "shahu043" 		#Used to give the user name for your new git acccount
+   git config --global user.email "shahu043@gmail.com"	#Used to give the user E-mail for your new git account
+   git config --list					#Check the user details
+   sudo vi .gitconfig 					#Used to change the basic information of your user account
+   cd .ssh
+   ll
+   xclip id_rsa.pub 					#Copy data from the file
+   sudo apt install xclip
+   xclip id_rsa.pub 
+   cat id_rsa.pub 
+   cd
+   git clone git@github.com:shahu043/Hello-world.git
+   cd Hello-world/
+   ll
+   cd ..
+   rm -rf Hello-world/
+   ll
+   git clone git@github.com:shahu043/Hello-world.git
+   cd Hello-world/
+   touch sample
+   vi sample
+   git status
+   git add -i
+   git add *						#Used to push all the files which you have created new one.
+   git git commit -m "Initial Commit"			#To push data in firt time use this command.
+   git status
+   git push origin master				#To get update these all files in Github use this command.
+
