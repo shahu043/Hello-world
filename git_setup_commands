@@ -30,5 +30,28 @@
    git add *						#Used to push all the files which you have created new one.
    git git commit -m "Initial Commit"			#To push data in firt time use this command.
    git status
-   git push origin master				#To get update these all files in Github use this command.
+   git push origin master				#To get update these all files in Github use this command.t add .
+   git commit -m "setup command"
+   git push origin master
+   
+
+
+   vi hhhh						#create file 
+   git add .						#add the recently added file to the Github
+   git status						#check the status of the recently created file
+   git commit -m "shahu"				#Provide the subject to recently added file
+   git push origin master 				#To pop up recently added file into the dashboard run this command.
+   ls
+   git status
+   vi a.txt
+   git add .
+   git status
+   git commit -m "a"
+   git status
+   git push origin master 				#if any file is deleted run this command to upadte the local your machine.	
+   git pull origin master 
+   ls
+   git add .
+   git status
+   git push origin master 
 
