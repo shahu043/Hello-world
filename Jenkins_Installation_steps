@@ -1,0 +1,16 @@
+ mkdir lab3.1
+   21  cd lab3.1/
+   26  wget -q -O- https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+   27  sudo vi /etc/apt/sources.list
+   28  sudo apt-get update
+   29  java --version
+   40  sudo apt-get install openjdk-8-jre
+   41  java -version
+   42  sudo apt-get install jenkins
+   44  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   53  sudo apt-get install jenkins
+"E: Failed to fetch https://pkg.jenkins.io/debian-stable/binary/InRelease" #If you get this error run the below command to resolve the issue.
+   55  sudo apt-get install apt-transport-https ca-certificates
+   56  sudo apt-get install jenkins
+   57  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  
