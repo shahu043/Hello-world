@@ -1,2 +1,18 @@
 TeamCity Configration Steps:
+scp -P 22 TeamCity-2019.2.2.tar.gz shahu@192.168.56.106:/home/shahu/teamcity
 
+tar -zxvf TeamCity-2019.2.2.tar.gz 
+ls
+sudo mkdir /opt/JetBrains
+mv TeamCity /opt/JetBrains/Teamcity
+sudo mv TeamCity /opt/JetBrains/Teamcity
+cd /opt/JetBrains/
+ls
+chmod -R 777 Teamcity/
+cd Teamcity/
+ls
+cd bin/
+./teamcity-server.sh start
+
+After completion of all the steps in terminal go to the Chrome browser and enter the machine IP and followed by : 8111 port number
+for TeamCity.
