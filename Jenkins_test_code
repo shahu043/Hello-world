@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Welcome to Jenkins class"
+echo "My name is Shahu"
+echo "I am working Perfios software solution"
