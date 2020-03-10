@@ -1,0 +1,11 @@
+sudo ubuntu-drivers autoinstall
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7EA0A9C3F273FCD8
+
+sudo apt-get purge nvidia*
+
+sudo apt-get update
+
+sudo apt-get install xserver-xorg-video-intel
+
+sudo ubuntu-drivers autoinstall
