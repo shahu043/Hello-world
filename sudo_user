@@ -1,0 +1,18 @@
+#!/bin/bash
+Hostname=$("hostname")
+
+
+echo "-----------------HostName**$Hostname**---------------------------"
+
+
+Totall_Users=$(cd /home ; ls)
+
+echo -e "------Totall number of user's in this Host in home directory------------------\n"
+
+echo "$Totall_Users"
+
+echo -e "----------------Totall number of sudo  user's in this host---------------------\n"
+
+S_user=$(sudo cat /etc/sudoers | sed -n '/User privilege specification/,/Members of the admin group may gain root privileges/p' | grep -Ev "User privilege specification" | grep -v "Members of the admin group may gain root privileges")
+
+echo "$S_user"
