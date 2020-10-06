@@ -1,0 +1,9 @@
+Login screen combo Ctrl + Alt + F1 enter username and password then run the following commands:
+
+sudo apt-get install dconf-tools
+
+DISPLAY=:0 dconf reset -f /org/compiz/
+
+unity --reset-icons
+
+setsid unity
